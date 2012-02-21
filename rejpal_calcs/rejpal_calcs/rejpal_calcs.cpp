@@ -3,6 +3,7 @@
 #include "stdafx.h"
 
 using namespace System;
+using namespace std:cout;
 
 int main(array<System::String ^> ^args)
 {
