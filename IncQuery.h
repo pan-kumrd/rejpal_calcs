@@ -13,7 +13,7 @@
 
 #define OPERATIONS "+-="
 
-#define BIND "wtf"
+const std::string bind = "wtf";
 
 class IncQuery
 {
