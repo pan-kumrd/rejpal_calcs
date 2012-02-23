@@ -28,7 +28,7 @@
 
 using std::string;
 
-CalcQuery::CalcQuery(string query)
+CalcQuery::CalcQuery(std::string query, std::string bind)
 {
  m_calc.empty();
  m_calcName.empty();

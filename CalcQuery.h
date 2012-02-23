@@ -27,8 +27,6 @@
 
 #define OPERATIONS "+-="
 
-const std::string bind = "wtf";
-
 class CalcQuery
 {
     /**
@@ -46,11 +44,19 @@ class CalcQuery
      */
     std::string m_calc;
 
-public:
     /**
-     * Constructor
+     * Stores a bind string
      */
-    CalcQuery(std::string query);
+    std::string m_bind;
+
+public:
+
+    /**
+     * Contructor
+     * @param query given query
+     * @param bind bind string
+     */
+    CalcQuery(std::string query, std::string bind);
 
     /**
      * Destructor
