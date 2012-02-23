@@ -19,8 +19,8 @@
  * along with rejpal_calcs.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef INCQUERY_H_
-#define INCQUERY_H_
+#ifndef CALCQUERY_H_
+#define CALCQUERY_H_
 
 #include <iostream>
 #include <string>
@@ -29,7 +29,7 @@
 
 const std::string bind = "wtf";
 
-class IncQuery
+class CalcQuery
 {
     /**
      * Stores the name of the given calc
@@ -50,12 +50,12 @@ public:
     /**
      * Constructor
      */
-    IncQuery(std::string query);
+    CalcQuery(std::string query);
 
     /**
      * Destructor
      */
-    virtual ~IncQuery();
+    virtual ~CalcQuery();
 
     /**
      * getters
@@ -72,4 +72,4 @@ public:
     void setCommand(char m_command);
 };
 
-#endif /* INCQUERY_H_ */
+#endif /* CALCQUERY_H_ */

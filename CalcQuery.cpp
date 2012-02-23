@@ -1,5 +1,5 @@
 /*
- * IncQuery.cpp
+ * CalcQuery.cpp
  *
  * Author: Michael Ruml <info@michaelruml.cz>
  *
@@ -23,12 +23,12 @@
 #include <string>
 #include <exception>
 
-#include "IncQuery.h"
+#include "CalcQuery.h"
 #include "CalcExceptions.h"
 
 using std::string;
 
-IncQuery::IncQuery(string query)
+CalcQuery::CalcQuery(string query)
 {
  m_calc.empty();
  m_calcName.empty();
@@ -99,37 +99,37 @@ IncQuery::IncQuery(string query)
  return;
 }
 
-string IncQuery::getCalc() const
+string CalcQuery::getCalc() const
 {
  return m_calc;
 }
 
-string IncQuery::getCalcName() const
+string CalcQuery::getCalcName() const
 {
  return m_calcName;
 }
 
-char IncQuery::getCommand() const
+char CalcQuery::getCommand() const
 {
  return m_command;
 }
 
-void IncQuery::setCalc(string m_calc)
+void CalcQuery::setCalc(string m_calc)
 {
  this->m_calc = m_calc;
 }
 
-void IncQuery::setCalcName(string m_calcName)
+void CalcQuery::setCalcName(string m_calcName)
 {
  this->m_calcName = m_calcName;
 }
 
-void IncQuery::setCommand(char m_command)
+void CalcQuery::setCommand(char m_command)
 {
  this->m_command = m_command;
 }
 
-IncQuery::~IncQuery()
+CalcQuery::~CalcQuery()
 {
 }
 
